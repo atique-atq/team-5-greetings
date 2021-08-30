@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="effect_style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        function open_curtain() {
+            $("#curtain1").animate({ width: 20 }, 5000);
+            $("#curtain2").animate({ width: 20 }, 5000);
+        }
+        function close_curtain() {
+            $("#curtain1").animate({ width: 200 }, 1000);
+            $("#curtain2").animate({ width: 191 }, 1000);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="effect" style="margin-top: 100px;">
+            <p>For the extraordinary effort by the team 5, we the Assistant Programmers of DoICT, are expressing Humble
+                Gratitude.</p>
+            <h1 id='proud'>We Are Proud of You!</h1>
+            <img style="width: 560px; height: 420px;" src="images/curtain1.jpg" id="curtain1">
+            <img style="width: 560px; height: 420px;" src="images/curtain2.jpg" id="curtain2">
+        </div>
+
+        <div id="curtain_buttons">
+            <input id='button' type="button" value="বিশেষ সম্মাননা প্রদান" onclick="open_curtain();">
+            <!-- <input type="button" value="CLOSE CURTAIN" onclick="close_curtain();"> -->
+        </div>
+
+    </div>
+</body>
+
+</html>
